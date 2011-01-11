@@ -24,6 +24,7 @@ class ProfesorAdmin(admin.ModelAdmin):
     list_display = ('nombre', 'email', 'celular', 'colegio', 'asignatura',
                     'educacion')
     list_filter = ('educacion', 'asignatura', 
+                   'capacitaciones',
                    'colegio__comuna__ciudad', 'colegio__comuna',
                    'colegio')
     search_fields = ['nombre', 'email', 'celular', 
