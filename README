@@ -1,0 +1,9 @@
+Instalacion
+===========
+
+ * Instalar pip, virtualenv y virtualenvwrapper
+ * mkvirtualenv comunidadingenio
+ * pip install svn+http://code.djangoproject.com/svn/django/trunk/
+ * git clone git://github.com/continuum/comunidadingenio.git
+ * cd comunidadingenio
+ * python manage.py runserver 0.0.0.0:8000
