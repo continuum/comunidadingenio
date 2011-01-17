@@ -11,7 +11,9 @@ class CiudadAdmin(admin.ModelAdmin):
     inlines = [ComunaInline]
 
 class ColegioAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('nombre', 'tipo', 'direccion', 'comuna')
+    list_filter = ('tipo', 'comuna__ciudad', 'comuna')
+    search_fields = ['nombre']
 
 class AsignaturaAdmin(admin.ModelAdmin):
     pass
